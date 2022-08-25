@@ -3,7 +3,8 @@
   postgresql_membership:
     group: "{{ item.group }}"
     target_roles: "{{ item.target_roles }}"
-    state: "{{ item.state }}"
+    state: "{{ item.state | default('present') }}"
+    port: "{{ item.port | default('5432') }}"
   with_items: "{{ postgresql_membership }}"
   become: true
   become_user: "{{ postgresql_user }}"

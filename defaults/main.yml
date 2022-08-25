@@ -74,7 +74,8 @@ postgresql_users: []
 postgresql_membership: []
 #   group: # defaults to not set
 #   target_roles: # defaults to not set
-#   state: # defaults to not set
+#   state: # defaults to 'present'
+#   port: # defaults to '5432'
 
 # Schemas to ensure exist.
 postgresql_schemas: []
