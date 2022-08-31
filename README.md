@@ -116,6 +116,14 @@ A list of databases to ensure exist on the server. Only the `name` is required; 
         port: # defaults to postgresql_port
         state: # defaults to 'present'
 
+A list of membership to ensure exist on the server. Only the `group` and `target_roles` is required; all other properties are optional.
+
+    postgresql_membership:
+        group: # defaults not set
+        target_roles: # defaults to not set
+        state: # defaults to 'present'
+        port: # defaults to '5432'
+
 A list of users to ensure exist on the server. Only the `name` is required; all other properties are optional.
 
     postgresql_schemas:
