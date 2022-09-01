@@ -74,12 +74,12 @@ postgresql_users: []
 postgresql_membership: []
 #   group: # defaults to not set
 #   target_roles: # defaults to not set
-#   state: # defaults to 'present'
-#   port: # defaults to postgresql_port
 #   login_host: # defaults to 'localhost'
 #   login_password: # defaults to not set
 #   login_user: # defaults to '{{ postgresql_user }}'
 #   login_unix_socket: # defaults to 1st of postgresql_unix_socket_directories
+#   port: # defaults to postgresql_port
+#   state: # defaults to 'present'
 
 # Schemas to ensure exist.
 postgresql_schemas: []
