@@ -120,12 +120,12 @@ A list of memberships to ensure exist on the server. Only the `group` and `targe
     postgresql_memberships:
         group: # defaults not set
         target_roles: # defaults to not set
-        state: # defaults to 'present'
-        port: # defaults to 'postgresql_port'
         login_host: # defaults to 'localhost'
         login_password: # defaults to not set
         login_user: # defaults to '{{ postgresql_user }}'
         login_unix_socket: # defaults to 1st of postgresql_unix_socket_directories
+        port: # defaults to 'postgresql_port'
+        state: # defaults to 'present'
 
 A list of users to ensure exist on the server. Only the `name` is required; all other properties are optional.
 
