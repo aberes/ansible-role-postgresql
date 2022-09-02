@@ -35,3 +35,4 @@
     group: "{{ postgresql_group }}"
     state: directory
     mode: 0700
+  when: postgresql_log_dir_enabled
