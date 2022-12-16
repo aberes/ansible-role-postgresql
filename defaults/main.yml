@@ -72,7 +72,7 @@ postgresql_users: []
 #   state: # defaults to 'present'
 
 # Membership to ensure exist.
-postgresql_membership: []
+postgresql_memberships: []
 #   group: # defaults to not set
 #   target_roles: # defaults to not set
 #   login_host: # defaults to 'localhost'
@@ -104,11 +104,12 @@ postgresql_privileges: []
 #   login_user: # defaults to '{{ postgresql_user }}'
 #   login_unix_socket: # defaults to 1st of postgresql_unix_socket_directories
 #   port: # defaults to postgresql_port
-#   objs: # default to 'ALL_IN_SCHEMA'
+#   schema: # default to not set
+#   objs: # defaults to 'ALL_IN_SCHEMA'
 #   state: # defaults to 'present'
-#   privs: defaults to 'ALL'
-#   type: default to not set
-#   target_roles: default to not set
+#   privs: # defaults to 'ALL'
+#   type: # defaults to not set
+#   target_roles: # defaults to not set
 
 # Whether to output user data when managing users.
 postgres_users_no_log: true

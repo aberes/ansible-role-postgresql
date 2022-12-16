@@ -137,9 +137,9 @@ A list of users to ensure exist on the server. Only the `name` is required; all 
         login_unix_socket: # defaults to 1st of postgresql_unix_socket_directories
         port: # defaults to postgresql_port
         state: # defaults to 'present'
-        database: exampledb # default to postgres
-        owner: jdoe # default to not set
-        cascade_drop: yes # default to not set
+        database: exampledb # defaults to postgres
+        owner: jdoe # defaults to not set
+        cascade_drop: yes # defaults to not set
 
 A list of schemas to ensure exist on the server. Only the `name` is required; all other properties are optional.
 
@@ -151,11 +151,12 @@ A list of schemas to ensure exist on the server. Only the `name` is required; al
         login_user: # defaults to '{{ postgresql_user }}'
         login_unix_socket: # defaults to 1st of postgresql_unix_socket_directories
         port: # defaults to postgresql_port
-        objs: # default to 'ALL_IN_SCHEMA'
+        schema: # defaults to not set
+        objs: # defaults to 'ALL_IN_SCHEMA'
         state: # defaults to 'present'
         privs: defaults to 'ALL'
-        type: default to not set
-        target_roles: default to not set
+        type: defaults to not set
+        target_roles: defaults to not set
 
 A list of privileges to ensure exist on the server. The `database` and `roles` is required; all other properties are optional.
 
